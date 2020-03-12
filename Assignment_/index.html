@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>HOME PAGE</title>
+          <meta charset="UTF-8">
+          <meta name="description" content = "IS1113 Project">
+          <meta name ="author" content= "Tanisha Findi">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <body style="background-color:#DCDCDC;">
+               
+          <style>
+                   {
+                  box-sizing: border-box;
+                    }
+                  .column {
+                  float: left;
+                  width: 33.33%;
+                  padding: 10px;
+                  height: 100%; 
+                       }
+
+                  .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                     }
+            </style>
+            <style>
+
+					* {
+					  box-sizing: border-box;
+					}
+
+					body {
+					  font-family: Arial;
+					  padding: 10px;
+					  background: #f1f1f1;
+					}
+
+
+					.header {
+					  padding: 30px;
+					  text-align: center;
+					  background: #DCDCDC;
+					}
+
+
+					.topnav {
+					  overflow: hidden;
+					  background-color: #343A40;
+					}
+
+
+					.topnav a {
+					  float: left;
+					  display: block;
+					  color: #f2f2f2;
+					  text-align: center;
+					  padding: 14px 16px;
+					  text-decoration: none;
+					}
+					.dropdown {
+					  float: left;
+					  overflow: hidden;
+					}
+
+					.dropdown .dropbtn {
+					  font-size: 16px;  
+					  border: none;
+					  outline: none;
+					  color: white;
+					  padding: 14px 16px;
+					  background-color: inherit;
+					  font-family: inherit;
+					  margin: 0;
+					}
+
+					.navbar a:hover, .dropdown:hover .dropbtn {
+					  background-color: a6a6a6;
+					}
+
+					.dropdown-content {
+					  display: none;
+					  position: absolute;
+					  background-color: #a6a6a6;
+					  min-width: 160px;
+					  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					  z-index: 1;
+					}
+
+					.dropdown-content a {
+					  float: none;
+					  Color:white;
+					  padding: 12px 16px;
+					  text-decoration: none;
+					  display: block;
+					  text-align: left;
+					}
+
+					.dropdown-content a:hover {
+					  background-color: #ddd;
+					}
+
+					.dropdown:hover .dropdown-content {
+					  display: block;
+					}
+
+					.topnav a:hover {
+					  color:#a6a6a6;
+					}
+           </style>
+		   <style>
+					 {box-sizing: border-box}
+					 body {font-family: Verdana, sans-serif; margin:0}
+					 .mySlides {display: none}
+					 img {vertical-align: middle;}
+		   
+					 .slideshow-container {
+					 max-width: 100%;
+					 position: relative;
+					 margin: auto;
+					   }
+
+		 
+				   .prev, .next {
+				   cursor: pointer;
+				   position: absolute;
+				   top: 50%;
+				   width: auto;
+				   padding: 16px;
+				   margin-top: -22px;
+				   Color:black;
+				   font-weight: bold;
+				   font-size: 18px;
+				   transition: 0.6s ease;
+				   border-radius: 0 3px 3px 0;
+				   user-select: none;
+					   }
+
+				   .next {
+				   right: 0;
+				   border-radius: 3px 0 0 3px;
+						}
+
+
+				  .prev:hover, .next:hover {
+				   background-color: rgba(0,0,0,0.8);
+						}
+
+
+				  .text {
+				  color: #f2f2f2;
+				  font-size: 15px;
+				  padding: 8px 12px;
+				  position: absolute;
+				  bottom: 8px;
+				  width: 100%;
+				  text-align: center;
+					 }
+
+
+				 .numbertext {
+				 color: #f2f2f2;
+				 font-size: 12px;
+				 padding: 8px 12px;
+				 position: absolute;
+				 top: 0;
+					 }
+
+		  
+				 .dot {
+				 cursor: pointer;
+				 height: 15px;
+				 width: 15px;
+				 margin: 0 2px;
+				 background-color: #bbb;
+				 border-radius: 50%;
+				 display: inline-block;
+				 transition: background-color 0.6s ease;
+					 }
+
+				 .active, .dot:hover {
+				 background-color: #717171;
+					 }
+
+
+				.fade {
+			   -webkit-animation-name: fade;
+			   -webkit-animation-duration: 1.5s;
+			   animation-name: fade;
+			   animation-duration: 1.5s;
+					 }
+
+			   @-webkit-keyframes fade {
+			   from {opacity: .4} 
+			   to {opacity: 1}
+					 }
+
+			   @keyframes fade {
+			   from {opacity: .4} 
+			   to {opacity: 1}
+					}
+
+
+			   @media only screen and (max-width: 300px) {
+			   .prev, .next,.text {font-size: 11px}
+					}
+         </style>
+
+         <style>
+  
+              body {
+              font-family: Arial, Helvetica, sans-serif;
+                   }
+
+              {
+              box-sizing: border-box;
+                   }
+
+             input[type=text], select, textarea {
+             width: 100%;
+             padding: 12px;
+             border: 1px solid #ccc;
+             margin-top: 6px;
+             margin-bottom: 16px;
+             resize: vertical;
+                 }
+   
+             input[type=submit] {
+             background-color: #000000;
+             Color:white;
+             padding: 12px 20px;
+             border: none;
+             cursor: pointer;
+                }
+
+             input[type=submit]:hover {
+             background-color: #45a049;
+                }
+
+
+             .container {
+             border-radius: 5px;
+             background-color: #DCDCDC;
+             padding: 10px;
+                }
+  
+        </style>
+          
+    </head>
+    
+    <body>
+        <img src="headerlogo.png-2.png" style="width:100%" >
+
+       <div class="bg-img">
+         <div class="container">
+           <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="CV.html">CV</a>
+            <a href="Interests.html">Interests</a>
+            <a href="consulting.html">Consulting Services</a>
+            <a href="ebus1.html">Services</a>
+       </div>
+         </div>
+          </div>
+
+
+      <div class="row">
+       <div class="column" style="background-color:"white";">
+        <h2></h2>
+        <img src="aboutme1.png" alt="About Me" width="400" height= "260" class="align-center medium"/>
+        <p>Tanisha Findi is a first year student in University College Cork, currently studying (BSCI) Business Information Systems.</p>
+        <p>She is eager to both build on her academic foundations in information systems and business and stay in tune with the latest developments in technology.
+            Tanisha is currently working as a freelance consultant and is always interested in a challenge. </p>
+        <a href="CV.html">Read her Curriculum Vitae </a>  
+      </div>
+
+      <div class="column" style="background-color:"white";">
+        <h2></h2>
+        <img src="interests.png" alt="My Interests" width="400" height= "260" class="align-center medium"/>
+        <p>Tanisha Findi has many interests which add some fun to her day. She has a passion for sport, her favourite sports being soccer and athletics. 
+           Tanisha has been an athletic sprinter for 6 years and is very enthusiastic about fitness and health. 
+        <p>Tanisha also has a love for travelling, which she uses to explore and gain knew life experiences and knowledge everyday.</p>
+        <a href="Interests.html">Read about her Interests </a>
+
+        
+        
+      </div>
+
+      <div class="column" style="background-color:"white";">
+       <h2></h2>
+       <img src="services.png" alt="Consulting Services" width="400" height= "260" class="align-center medium"/>
+       <p>Tanisha Findi also provides a very high standard Consulting Service.She supplies the latest Consulting offerings to the market at very reasonable prices.</p>
+       <p> With over 100 clients, Tanisha is well suited to providing you and your business the best Consulting Service and customer experience money has to offer. 
+          She is able to meet the individual needs of the client efficiently and swiftly.</p>
+      
+       <a href="consulting.html">View her Consulting Services</a>
+
+      </div>
+
+      <div class="slideshow-container">
+       <div class="mySlides fade">
+         <img src="Testimonials.png" style="width:100%">
+        </div>
+
+      <div class="mySlides fade">
+        <img src="skills.png" style="width:100%">
+       
+       </div>
+
+     <div class="mySlides fade">
+       <img src="contact.png" style="width:100%">
+        
+     </div>
+
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+       <span class="dot" onclick="currentSlide(2)"></span> 
+       <span class="dot" onclick="currentSlide(3)"></span> 
+     </div>
+
+    <script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
+
+       function plusSlides(n) {
+       showSlides(slideIndex += n);
+           }
+
+       function currentSlide(n) {
+       showSlides(slideIndex = n);
+           }
+
+       function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}    
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+            }
+       for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+            }
+       slides[slideIndex-1].style.display = "block";  
+       dots[slideIndex-1].className += " active";
+            }
+    </script>
+      </div>
+
+
+      <div class="container">
+       <div style="text-align:center">
+        <h2>Contact Tanisha</h2>
+   
+     </div>
+        <div>  
+      <form action="/action_page.php">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="county">County</label>
+            <select id="county" name="county">
+              <option value="Antrim">Antrim</option>
+              <option value="Armagh">Armagh</option>
+              <option value="Carlow">Carlow</option>
+              <option value="Cavan">Cavan</option>
+              <option value="Clare">Clare</option>
+              <option value="Cork">Cork</option>
+              <option value="Derry">Derry</option>
+              <option value="Donegal">Donegal</option>
+              <option value="Down">Down</option>
+              <option value="Dublin">Dublin</option>
+              <option value="Fermanagh">Fermanagh</option>
+              <option value="Galway">Galway</option>
+              <option value="Kerry">Kerry</option>
+              <option value="Kildare">Kildare</option>
+              <option value="Kilkenny">Kilkenny</option>
+              <option value="Laois">Laois</option>
+              <option value="Leitrim">Leitrim</option>
+              <option value="Limerick">Limerick</option>
+              <option value="Longford">Longford</option>
+              <option value="Louth">Louth</option>
+              <option value="Mayo">Mayo</option>
+              <option value="Meath">Meath</option>
+              <option value="Monaghan">Monaghan</option>
+              <option value="Offaly">Offaly</option>
+              <option value="Roscommon">Roscommon</option>
+              <option value="Sligo">Sligo</option>
+              <option value="Tipperary">Tipperary</option>
+              <option value="Tyrone">Tyrone</option>
+              <option value="Waterford">Waterford</option>
+              <option value="Westmeath">Westmeath</option>
+              <option value="Wexford">Wexford</option>
+              <option value="Wicklow">Wicklow</option>
+              
+           </select>
+         <label for="subject">Subject</label>
+           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+      </form>
+     </div>
+
+     </div>
+​
+​
+
+
+    </body>
+ </html>        
+       
+            
+
+               
+                 
+                 
+
+
+
+   
